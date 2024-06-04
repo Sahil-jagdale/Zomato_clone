@@ -1,0 +1,204 @@
+* {
+    margin : 0;
+    padding : 0;
+}
+
+body {
+
+    background-color: #ebf2ff;
+
+    .merriweather-light {
+        font-family: "Merriweather", serif;
+        font-weight: 300;
+        font-style: normal;
+      }
+      
+      .merriweather-light-italic {
+        font-family: "Merriweather", serif;
+        font-weight: 300;
+        font-style: italic;
+      }
+      
+      .merriweather-regular {
+        font-family: "Merriweather", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+      .merriweather-regular-italic {
+        font-family: "Merriweather", serif;
+        font-weight: 400;
+        font-style: italic;
+      }
+      
+      .merriweather-bold {
+        font-family: "Merriweather", serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+      
+      .merriweather-bold-italic {
+        font-family: "Merriweather", serif;
+        font-weight: 700;
+        font-style: italic;
+      }
+      
+      .merriweather-black {
+        font-family: "Merriweather", serif;
+        font-weight: 900;
+        font-style: normal;
+      }
+      
+      .merriweather-black-italic {
+        font-family: "Merriweather", serif;
+        font-weight: 900;
+        font-style: italic;
+      }
+      
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+}
+
+.navbar__brand {
+    width : 100px;
+}
+
+.navbar__logo{
+    width : 100%;
+}
+
+.button__primary {
+    background-image: linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%
+    );
+    color: #fff;
+    border: none;
+    padding : 12px;
+    border-radius: 6px;
+}
+
+.button__primary:hover {
+    border: 2px solid #dd2476;
+}
+
+.hero__image__container {
+    width : 100%;
+}
+
+.hero__image {
+    width :100%;
+    border-radius: 8px;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
+}
+
+.container {
+    padding: 20px;
+    max-width: 100%;
+    margin : 0 auto;
+}
+.hero__text {
+    font-weight: 800px;
+    font-size: 30px;
+    margin : 20px 0;
+    color: #1d3557;
+}
+.food__cart__description {
+    padding : 15px;
+}
+.food__cart__image__container {
+    margin-top: 55px;
+    width: 100%;
+}
+.food__image {
+    border-radius: 8px 8px 0 0;
+    width : 100%;
+}
+.food__cart {
+    background-color: #f9f9f9;
+}
+.explore__menu__text {
+    font-size: 42px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#pizza__cart {
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+    .navbar {
+        justify-content: space-between;
+        padding: 10px 30px;
+    }
+    .hero__container {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        font-size: 30px;
+        font-weight: 800px;
+        color: #1d3557;
+    }
+    .explore__menu__list {
+        display: flex;
+        gap: 15px;
+        margin-top: 45px;
+        padding: 0 30px;
+    }
+    .explore__menu__gradient__bg {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background-image: linear-gradient(
+            to right,
+            #ff512f 0%,
+            #dd2476 51%,
+            #ff512f 100%
+        );
+        z-index: -3;
+        transform: skewY(-5deg);
+    }
+    .explore__menu__container {
+        position: relative;
+    }
+}
+
+@media (min-width : 1024px){
+    .container {
+        max-width: 70%;
+    }
+    .navbar__brand {
+        width : 150px;
+    }
+    .button__primary {
+        font-weight: 550;
+    }
+    .hero__description {
+        width : 100%;
+    }
+    .hero__text{
+        font-size: 50px;
+    }
+    .explore__menu__list {
+        gap: 25px;
+       }
+}
