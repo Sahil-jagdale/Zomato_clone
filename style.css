@@ -62,6 +62,7 @@ body {
     align-items: center;
     justify-content: space-around;
     background-color: #fff;
+    height: 80px;
 }
 
 .navbar__brand {
@@ -70,6 +71,7 @@ body {
 
 .navbar__logo{
     width : 100%;
+    text-shadow: #FF0000;
 }
 
 .button__primary {
@@ -81,7 +83,7 @@ body {
     );
     color: #fff;
     border: none;
-    padding : 12px;
+    padding : 15px;
     border-radius: 6px;
 }
 
@@ -107,7 +109,7 @@ body {
 .hero__text {
     font-weight: 800px;
     font-size: 30px;
-    margin : 20px 0;
+    margin : 45px 0;
     color: #1d3557;
 }
 .food__cart__description {
@@ -126,20 +128,100 @@ body {
 }
 .explore__menu__text {
     font-size: 42px;
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin-top: 18px;
+    margin-bottom: 75px;
+    color: #1d3557;
     text-align: center;
 }
-#pizza__cart {
-    margin-top: -20px;
-    margin-bottom: 30px;
+
+.explore__menu__container {
+    height: 650px;
+
 }
 
+#pizza__cart {
+    margin-top: -20px;
+    margin-bottom: 30px;    
+}
+.view__image__container {
+    display: block;
+    margin-top: 80px;
+    width: 100%;
+}
+.view__container {
+    width: 100%;
+    margin-top: 830px;
+}
+.view__container__text {
+    font-size: 35px;
+    text-align: center;
+    color: #1d3557;
+}
+.resto__image1 {
+    width :50%;
+    border-radius: 6px;
+   
 
+}
+.resto__image2 {
+    margin-left: 180px;
+    margin-top: -45px;
+    width :50%;
+    border-radius: 6px;
+   
+}
 
+.resto__image3 {
+    margin-top: -55px;
+    width :50%;
+    border-radius: 6px;
+} 
+.update__container {
+    font-size: 20px;
+    margin-top: 80px;
+    text-align: center;
+    color: #1d3557;
+}
+.get__updates {
+    padding: 10px;
+    margin-left: 10px;
+    font-size: 12px;
+}
+.searchbar {
+    border-color: #F075AA;
+    color: #f9f9f9;
+}
+.Search__container {
+    margin-top: 20px;
+}
+.color__container {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    background-image: linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%
+    ); 
+    border-radius: 16px 16px 0 0;
+   width: 100%;
+   height: 100px;
+   margin-top: 80px;
+}
 
-
-
+.logo {
+    color: #FDFFE2;
+    font-size: 15px;
+    margin-top: 40px;
+    
+}
+.text__container {
+    color: #FDFFE2;
+    font-size: 10px;
+    margin-top: 30px;
+    
+}
 
 
 @media (min-width: 768px) {
@@ -180,6 +262,44 @@ body {
     .explore__menu__container {
         position: relative;
     }
+    .view__container__text {
+        font-size: 42px;
+    }
+    .view__container {
+        width: 100%;
+        margin-top: 100px;
+    }
+    .view__image__container {
+        width: 100%;
+        margin-top: 180px;
+    }
+    .resto__image2 {
+        margin-left: 380px;
+        margin-top: -150px;
+    }
+    .update__container {
+        font-size: 40px;
+        margin-top: 120px;
+    }
+    .get__updates {
+        font-size: 23px;
+    }
+    .searchbar {
+     block-size: 25px;
+     padding: 0 20px 0 20px;
+    }
+    .logo {
+        font-size: 20px;
+        margin-top: 60px;
+    }
+    .text__container {
+        margin-top: 40px;
+        font-size: 15px;
+      }
+      .color__container {
+        height: 140px;
+    }
+ 
 }
 
 @media (min-width : 1024px){
@@ -201,4 +321,41 @@ body {
     .explore__menu__list {
         gap: 25px;
        }
+    .explore__menu__text {
+        column-gap: 300px;
+    }
+    .view__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: -100px;
+        gap: 30px;
+    }
+    .view__container__text {
+        margin-top: 170px;
+        font-size: 50px;
+        
+    }
+    .resto__image2 {
+        margin-left: 350px;
+        margin-top: -60px;
+    }
+    .update__container {
+        font-size: 27px;
+       
+    }
+    .get__updates {
+        font-size: 18px;
+    }
+    .text__container {
+        margin-top: 40px;
+        font-size: 12px;
+      }
+    .color__container {
+        height: 130px;
+    }
+    .logo {
+        font-size: 18px;
+        margin-top: 50px;
+     }
 }
